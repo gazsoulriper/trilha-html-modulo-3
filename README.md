@@ -1,3 +1,5 @@
+Desafio concluido, link para ver o site online https://gazsoulriper.github.io/trilha-html-modulo-3/
+
 # Módulo 3 - Trilha HTML
 
 **Título:** Recriando Wikipedia, com um layout melhor :)
