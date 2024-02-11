@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu com Setas em HTML e CSS</title>
+    <style>
+        /* Estilos para o menu */
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-item {
+            padding: 10px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #ffffff;
+            position: relative;
+        }
+
+        .sub-menu {
+            display: none;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .toggle-input {
+            display: none;
+        }
+
+        .toggle-label {
+            cursor: pointer;
+        }
+
+        .toggle-label::after {
+            content: '▼';
+            float: left;
+            padding-right: 1rem;
+        }
+
+        .toggle-input:checked ~ .sub-menu {
+            display: block;
+        }
+
+        .toggle-input:checked + .toggle-label::after {
+            content: "▲";
+        }
+
+        /* Estilos para os itens do menu */
+        .sub-menu li {
+            padding: 1rem 3rem .1rem;
+            border-bottom: 1px solid #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="menu">
+        <li class="menu-item">
+            <input type="checkbox" id="toggle-submenu1" class="toggle-input">
+            <label for="toggle-submenu1" class="toggle-label">Conquistas</label>
+            <ul class="sub-menu">
+                <li>Nacionais</li>
+                <li>Internacionais</li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+</html>
